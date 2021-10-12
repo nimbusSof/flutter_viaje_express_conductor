@@ -1,23 +1,22 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_viaje_express_conductor/src/shared_prefs/preferencias_usuario.dart';
-import 'package:flutter_viaje_express_conductor/src/utils/colors.dart';
 import 'package:flutter_viaje_express_conductor/src/widgets/global_widgets/cabecera_widgets/cabecera_widget.dart';
 import 'package:flutter_viaje_express_conductor/src/widgets/global_widgets/customComponents_widgets/custom_button.dart';
 import 'package:flutter_viaje_express_conductor/src/widgets/global_widgets/sideBar_widgets/sideBar_widget.dart';
 
-
-class PerfilInicioPage extends StatefulWidget {
+class GananciasInicioPage extends StatefulWidget {
   @override
-  _PerfilInicioPageState createState() => _PerfilInicioPageState();
+  _GananciasInicioPageState createState() =>
+      _GananciasInicioPageState();
 }
 
-class _PerfilInicioPageState extends State<PerfilInicioPage> {
+class _GananciasInicioPageState extends State<GananciasInicioPage> {
   GlobalKey<ScaffoldState> _scafoldKey = GlobalKey<ScaffoldState>();
   final prefs = new PreferenciasUsuario();
   @override
   Widget build(BuildContext context) {
-    prefs.ultimaPagina = 'perfil_inicio';
+    prefs.ultimaPagina = 'historialViajes_inicio';
     return Scaffold(
         key: _scafoldKey,
         drawer: SideBar(),
@@ -56,19 +55,19 @@ class _EstructuraPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-        Cabecera(titulo: 'perfilUsuario.inicio.titulo'.tr(), subtitulo: 'Viaje Express'),
+        Cabecera(titulo: 'ganancias.titulo'.tr(), subtitulo: 'Viaje Express'),
         BtnSimpleIcon(
-          texto: 'perfilUsuario.inicio.btnConfiguracion'.tr(),
-          icono: Icons.person,
+          texto: 'ganancias.btnGanancias'.tr(),
+          icono: Icons.leaderboard,
           color: Colors.blue,
-          ruta: 'configuracionPerfil',
+          
         ),
         BtnSimpleIcon(
-          texto: 'perfilUsuario.inicio.btnCalificacion'.tr(),
-          icono: Icons.star,
+          texto: 'ganancias.btnAgregar'.tr(),
+          icono: Icons.credit_card,
           color: Colors.blue,
-          ruta: 'clasificaciónPerfil',
-        )
+        
+        ),
       ],
     );
   }

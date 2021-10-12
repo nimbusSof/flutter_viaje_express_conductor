@@ -78,7 +78,7 @@ class _SideBarState extends State<SideBar> {
           title: Text('sideBar.ganancias'.tr()),
           onTap: () {
             
-            Navigator.pushReplacementNamed(context, 'ganancias');
+            Navigator.pushReplacementNamed(context, 'ganancias_inicio');
           },
         ),
 

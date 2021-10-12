@@ -235,6 +235,14 @@
         
     },
 
+
+    "ganancias":{
+        "titulo": "Ganancias",
+        "btnGanancias": "Ver ganancias",
+        "btnAgregar": "Agregar cuenta bancaria"
+    },
+
+
     "sideBar":{
         "inicio":"Inicio",
         "ganancias":"Profits",
@@ -242,6 +250,11 @@
         "configuraciones":"Configuraciones",
         "salir":"Salir"
     }
+
+
+    
+
+
 
 
 

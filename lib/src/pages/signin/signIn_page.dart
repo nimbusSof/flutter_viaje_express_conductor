@@ -5,7 +5,7 @@ import 'package:flutter_viaje_express_conductor/src/services/auth_service.dart';
 import 'package:flutter_viaje_express_conductor/src/services/notificacion_service.dart';
 import 'package:flutter_viaje_express_conductor/src/widgets/global_widgets/customComponents_widgets/custom_button.dart';
 import 'package:flutter_viaje_express_conductor/src/widgets/global_widgets/customComponents_widgets/custom_input.dart';
-import 'package:flutter_viaje_express_conductor/src/widgets/login_widget/logo.dart';
+import 'package:flutter_viaje_express_conductor/src/widgets/signin_widget/logo.dart';
 
 import 'package:provider/provider.dart';
 

@@ -4,6 +4,7 @@ import 'package:flutter_viaje_express_conductor/src/pages/configuraciones/cambia
 import 'package:flutter_viaje_express_conductor/src/pages/configuraciones/cambiarIdioma_page.dart';
 import 'package:flutter_viaje_express_conductor/src/pages/configuraciones/cambiarNumero_page.dart';
 import 'package:flutter_viaje_express_conductor/src/pages/configuraciones/configuraciones_inicio_page.dart';
+import 'package:flutter_viaje_express_conductor/src/pages/ganancias/ganancias_inicio_page.dart';
 import 'package:flutter_viaje_express_conductor/src/pages/historialViajes/historialViajes_inicio_page.dart';
 import 'package:flutter_viaje_express_conductor/src/pages/historialViajes/viajesCancelados_page.dart';
 import 'package:flutter_viaje_express_conductor/src/pages/historialViajes/viajesConcluidos_page.dart';
@@ -11,10 +12,10 @@ import 'package:flutter_viaje_express_conductor/src/pages/inicio/inicio_page.dar
 import 'package:flutter_viaje_express_conductor/src/pages/perfil/clasificacionPerfil_page.dart';
 import 'package:flutter_viaje_express_conductor/src/pages/perfil/configuracionPerfil_page.dart';
 import 'package:flutter_viaje_express_conductor/src/pages/perfil/perfil_inicio_page.dart';
-import 'package:flutter_viaje_express_conductor/src/pages/principal/check_auth_screen.dart';
-import 'package:flutter_viaje_express_conductor/src/pages/principal/signIn_page.dart';
+import 'package:flutter_viaje_express_conductor/src/pages/signin/check_auth_screen.dart';
+import 'package:flutter_viaje_express_conductor/src/pages/signin/signIn_page.dart';
 
-import 'package:flutter_viaje_express_conductor/src/pages/principal/splash_screen_page.dart';
+import 'package:flutter_viaje_express_conductor/src/pages/signin/splash_screen_page.dart';
 
 
 final Map<String, Widget Function(BuildContext)> appRoutes = {
@@ -40,5 +41,8 @@ final Map<String, Widget Function(BuildContext)> appRoutes = {
   'historialViajes_inicio'       :  (_) => HistorialViajesInicioPage(),
   'viajesConcluidos'             :  (_) => ViajesConcluidosPage(),
   'viajesCancelados'             :  (_) => ViajesCanceladosPage(),
+
+  //MODULO GANANCIAS
+  'ganancias_inicio'             :  (_) => GananciasInicioPage(),
 
 };

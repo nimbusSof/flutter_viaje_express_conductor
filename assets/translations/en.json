@@ -227,6 +227,13 @@
     },
 
 
+    "ganancias":{
+        "titulo": "Profits",
+        "btnGanancias": "View profits",
+        "btnAgregar": "Add bank account"
+    },
+
+
     "sideBar":{
         "inicio":"Home",
         "ganancias":"Profits",
