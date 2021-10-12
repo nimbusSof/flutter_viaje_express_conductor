@@ -37,12 +37,12 @@ class Estructura extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final formCliente = Provider.of<FormsConductor>(context);
+    //final formCliente = Provider.of<FormsConductor>(context);
     
 
     return Container(
       child: Form(
-        //key: formCliente.formkeyViajeNuevo,
+        //: key: formCliente.formkeyViajeNuevo,
         child: Column(
           children: <Widget>[
             //CabeceraMapa(),
