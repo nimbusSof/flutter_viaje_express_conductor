@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 //import 'package:flutter_viaje_express_cliente/src/pages/inicio/inicio_page.dart';
 
 import 'package:flutter_viaje_express_conductor/src/pages/signin/signIn_page.dart';
-import 'package:flutter_viaje_express_conductor/src/services/auth_service.dart';
+import 'package:flutter_viaje_express_conductor/src/services/signin_services/auth_service.dart';
 import 'package:flutter_viaje_express_conductor/src/shared_prefs/preferencias_usuario.dart';
 import 'package:provider/provider.dart';
 

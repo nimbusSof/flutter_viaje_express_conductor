@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 
-import 'package:flutter_viaje_express_conductor/src/providers/slidingUpPanel_provider.dart';
+import 'package:flutter_viaje_express_conductor/src/providers/inicio/slidingUpPanel_provider.dart';
 import 'package:flutter_viaje_express_conductor/src/shared_prefs/preferencias_usuario.dart';
 import 'package:flutter_viaje_express_conductor/src/widgets/global_widgets/sideBar_widgets/sideBar_widget.dart';
 import 'package:flutter_viaje_express_conductor/src/widgets/inicio_widgets/btn_seguir_ubicacion.dart';

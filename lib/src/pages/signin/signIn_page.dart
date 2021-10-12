@@ -1,7 +1,7 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_viaje_express_conductor/src/providers/forms_principal_provider.dart';
-import 'package:flutter_viaje_express_conductor/src/services/auth_service.dart';
+import 'package:flutter_viaje_express_conductor/src/providers/signin/forms_SignIn_provider.dart';
+import 'package:flutter_viaje_express_conductor/src/services/signin_services/auth_service.dart';
 import 'package:flutter_viaje_express_conductor/src/services/notificacion_service.dart';
 import 'package:flutter_viaje_express_conductor/src/widgets/global_widgets/customComponents_widgets/custom_button.dart';
 import 'package:flutter_viaje_express_conductor/src/widgets/global_widgets/customComponents_widgets/custom_input.dart';

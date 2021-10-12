@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
+
 import 'package:flutter_viaje_express_conductor/src/pages/inicio/estructuraPage.dart';
-import 'package:flutter_viaje_express_conductor/src/providers/slidingUpPanel_provider.dart';
+import 'package:flutter_viaje_express_conductor/src/providers/inicio/slidingUpPanel_provider.dart';
 
 import 'package:provider/provider.dart';
 //import 'package:flutter_viaje_express_cliente/src/widgets/mapa_widgets/btn_seguir_ubicacion.dart';
