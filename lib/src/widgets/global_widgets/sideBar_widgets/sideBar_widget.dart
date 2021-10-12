@@ -74,7 +74,7 @@ class _SideBarState extends State<SideBar> {
 
 
         ListTile(
-          leading: Icon(Icons.home),
+          leading: Icon(Icons.attach_money_rounded),
           title: Text('sideBar.ganancias'.tr()),
           onTap: () {
             

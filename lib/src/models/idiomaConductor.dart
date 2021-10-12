@@ -32,7 +32,7 @@ class IdiomaConductor {
         "exito": exito,
         "codigo": codigo,
         "mensaje": mensaje,
-        "data": data!.toJson(),
+        "data": data?.toJson(),
     };
 }
 

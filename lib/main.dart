@@ -2,6 +2,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_viaje_express_conductor/src/localization/supported_locales.dart';
 import 'package:flutter_viaje_express_conductor/src/providers/datosConfPerfil_provider.dart';
+import 'package:flutter_viaje_express_conductor/src/providers/datosConfiguraciones_provider.dart';
 import 'package:flutter_viaje_express_conductor/src/providers/formsConductor_provider.dart';
 import 'package:flutter_viaje_express_conductor/src/providers/forms_principal_provider.dart';
 import 'package:flutter_viaje_express_conductor/src/routes/routes.dart';
@@ -37,7 +38,8 @@ class AppState extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => new FormsConductor()),
         ChangeNotifierProvider(create: (_) => new SignInFormProvider()),
         ChangeNotifierProvider(create: (_) => new UpdateConductorService()),
-        ChangeNotifierProvider(create: (_) => new DatosConfPerfil())
+        ChangeNotifierProvider(create: (_) => new DatosConfPerfil()),
+        ChangeNotifierProvider(create: (_) => new DatosConfiguraciones()),
       ],
       child: MyApp(),
     );
