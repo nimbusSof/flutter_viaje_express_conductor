@@ -42,7 +42,7 @@ class Estructura extends StatelessWidget {
 
     return Container(
       child: Form(
-        key: formCliente.formkeyViajeNuevo,
+        //key: formCliente.formkeyViajeNuevo,
         child: Column(
           children: <Widget>[
             //CabeceraMapa(),
