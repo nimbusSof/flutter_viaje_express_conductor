@@ -4,6 +4,9 @@ import 'package:flutter_viaje_express_conductor/src/pages/configuraciones/cambia
 import 'package:flutter_viaje_express_conductor/src/pages/configuraciones/cambiarIdioma_page.dart';
 import 'package:flutter_viaje_express_conductor/src/pages/configuraciones/cambiarNumero_page.dart';
 import 'package:flutter_viaje_express_conductor/src/pages/configuraciones/configuraciones_inicio_page.dart';
+import 'package:flutter_viaje_express_conductor/src/pages/historialViajes/historialViajes_inicio_page.dart';
+import 'package:flutter_viaje_express_conductor/src/pages/historialViajes/viajesCancelados_page.dart';
+import 'package:flutter_viaje_express_conductor/src/pages/historialViajes/viajesConcluidos_page.dart';
 import 'package:flutter_viaje_express_conductor/src/pages/inicio/inicio_page.dart';
 import 'package:flutter_viaje_express_conductor/src/pages/perfil/clasificacionPerfil_page.dart';
 import 'package:flutter_viaje_express_conductor/src/pages/perfil/configuracionPerfil_page.dart';
@@ -32,5 +35,10 @@ final Map<String, Widget Function(BuildContext)> appRoutes = {
   'cambiarIdioma'                :  (_) => CambiarIdiomaPage(),
   'cambiarFormatos'              :  (_) => CambiarFormatosPage(),
   'acercaApp'                    :  (_) => AcercaAppPage(),
+
+   //MODULO HISTORIAL DE VIAJES
+  'historialViajes_inicio'       :  (_) => HistorialViajesInicioPage(),
+  'viajesConcluidos'             :  (_) => ViajesConcluidosPage(),
+  'viajesCancelados'             :  (_) => ViajesCanceladosPage(),
 
 };
