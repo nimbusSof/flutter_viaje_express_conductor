@@ -229,9 +229,7 @@
 
     "sideBar":{
         "inicio":"Home",
-        "viajeNuevo":"New trip",
-        "destinosFav":"Favorite destinations",
-        "metodoPago":"Payment",
+        "ganancias":"Profits",
         "historial":"Travel history",
         "configuraciones":"Settings",
         "salir":"Log out"

@@ -1,10 +1,13 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_viaje_express_conductor/src/localization/supported_locales.dart';
+import 'package:flutter_viaje_express_conductor/src/providers/datosConfPerfil_provider.dart';
+import 'package:flutter_viaje_express_conductor/src/providers/formsConductor_provider.dart';
 import 'package:flutter_viaje_express_conductor/src/providers/forms_principal_provider.dart';
 import 'package:flutter_viaje_express_conductor/src/routes/routes.dart';
 import 'package:flutter_viaje_express_conductor/src/services/auth_service.dart';
 import 'package:flutter_viaje_express_conductor/src/services/notificacion_service.dart';
+import 'package:flutter_viaje_express_conductor/src/services/perfil_services/updateCliente_service.dart';
 import 'package:flutter_viaje_express_conductor/src/shared_prefs/preferencias_usuario.dart';
 import 'package:provider/provider.dart';
 
@@ -31,7 +34,10 @@ class AppState extends StatelessWidget {
       providers: [
         ChangeNotifierProvider(create: (_) => new AuthService()),     
         ChangeNotifierProvider(create: (_) => new PreferenciasUsuario()),
-        ChangeNotifierProvider(create: (_) => new SignInFormProvider())
+        ChangeNotifierProvider(create: (_) => new FormsConductor()),
+        ChangeNotifierProvider(create: (_) => new SignInFormProvider()),
+        ChangeNotifierProvider(create: (_) => new UpdateConductorService()),
+        ChangeNotifierProvider(create: (_) => new DatosConfPerfil())
       ],
       child: MyApp(),
     );

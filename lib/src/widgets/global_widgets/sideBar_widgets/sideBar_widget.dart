@@ -71,35 +71,23 @@ class _SideBarState extends State<SideBar> {
             Navigator.pushReplacementNamed(context, 'inicio');
           },
         ),
+
+
         ListTile(
-          leading: Icon(Icons.map),
-          title: Text('sideBar.viajeNuevo'.tr()),
+          leading: Icon(Icons.home),
+          title: Text('sideBar.ganancias'.tr()),
           onTap: () {
             
-            Navigator.pushReplacementNamed(context, 'loadingMapa');
+            Navigator.pushReplacementNamed(context, 'ganancias');
           },
         ),
-        ListTile(
-          leading: Icon(Icons.save),
-          title: Text('sideBar.destinosFav'.tr()),
-          onTap: () {
-            
-            Navigator.pushReplacementNamed(context, 'rutasGuardadas_inicio');
-          },
-        ),
-        ListTile(
-          leading: Icon(Icons.credit_card),
-          title: Text('sideBar.metodoPago'.tr()),
-          onTap: () {
-           
-            Navigator.pushReplacementNamed(context, 'metodoPago_inicio');
-          },
-        ),
+
+        
         ListTile(
           leading: Icon(Icons.history),
           title: Text('sideBar.historial'.tr()),
           onTap: () {
-            ;
+            
             Navigator.pushReplacementNamed(context, 'historialViajes_inicio');
           },
         ),

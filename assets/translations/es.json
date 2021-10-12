@@ -237,9 +237,7 @@
 
     "sideBar":{
         "inicio":"Inicio",
-        "viajeNuevo":"Viaje Nuevo",
-        "destinosFav":"Destinos favoritos",
-        "metodoPago":"Método de pago",
+        "ganancias":"Profits",
         "historial":"Historial de viajes",
         "configuraciones":"Configuraciones",
         "salir":"Salir"
