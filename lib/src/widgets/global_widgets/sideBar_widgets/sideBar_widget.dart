@@ -116,7 +116,7 @@ class _SideBarState extends State<SideBar> {
             authService.logout();
 
             Navigator.pushNamedAndRemoveUntil(
-                context, 'login', (route) => false);
+                context, 'signin', (route) => false);
           },
         )
       ]),

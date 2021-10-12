@@ -58,7 +58,7 @@
     
 
     "signIn"     :{
-        "frase"             :"Towards your destination",
+        "frase"             :"Driver",
         "reiniciarClave"    : "Did you forget your password?",
         "cuentaPregunta"    : "do not have an account yet?",
         "crearCuenta"       : "Sign Up",

@@ -58,7 +58,7 @@
 
 
     "signIn"     :{
-        "frase"             :"Hacia tu destino",
+        "frase"             : "Conductor",
         "reiniciarClave"    : "¿Olvidaste tu clave?",
         "cuentaPregunta"    : "¿No tienes cuenta?",
         "crearCuenta"       : "Registrate",
