@@ -1,5 +1,6 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_viaje_express_conductor/src/providers/slidingUpPanel_provider.dart';
 
 import 'package:flutter_viaje_express_conductor/src/services/auth_service.dart';
 import 'package:flutter_viaje_express_conductor/src/shared_prefs/preferencias_usuario.dart';
@@ -15,7 +16,7 @@ class SideBar extends StatefulWidget {
 class _SideBarState extends State<SideBar> {
   @override
   Widget build(BuildContext context) {
-    
+    final panel = Provider.of<SlidingUpPanelProvider>(context);
     final authService = Provider.of<AuthService>(context, listen: false);
     final prefs = new PreferenciasUsuario();
 
@@ -23,7 +24,7 @@ class _SideBarState extends State<SideBar> {
       child: ListView(padding: EdgeInsets.zero, children: <Widget>[
         GestureDetector(
           onTap: () {
-            
+            panel.reiniciar();
             Navigator.pushReplacementNamed(context, 'perfil_inicio');
           },
           child: DrawerHeader(
@@ -67,27 +68,23 @@ class _SideBarState extends State<SideBar> {
           leading: Icon(Icons.home),
           title: Text('sideBar.inicio'.tr()),
           onTap: () {
-            
+            panel.reiniciar();
             Navigator.pushReplacementNamed(context, 'inicio');
           },
         ),
-
-
         ListTile(
           leading: Icon(Icons.attach_money_rounded),
           title: Text('sideBar.ganancias'.tr()),
           onTap: () {
-            
+            panel.reiniciar();
             Navigator.pushReplacementNamed(context, 'ganancias_inicio');
           },
         ),
-
-        
         ListTile(
           leading: Icon(Icons.history),
           title: Text('sideBar.historial'.tr()),
           onTap: () {
-            
+            panel.reiniciar();
             Navigator.pushReplacementNamed(context, 'historialViajes_inicio');
           },
         ),
@@ -95,31 +92,28 @@ class _SideBarState extends State<SideBar> {
           leading: Icon(Icons.settings),
           title: Text('sideBar.configuraciones'.tr()),
           onTap: () {
-            
+            panel.reiniciar();
             Navigator.pushReplacementNamed(context, 'configuraciones_inicio');
           },
         ),
         ListTile(
           leading: Icon(Icons.logout),
           title: Text('sideBar.salir'.tr()),
-          onTap: () async{
-
+          onTap: () async {
+            panel.reiniciar();
             //al salir se restablecerá la aplicación con el idioma que tenga configurado
             //el dispositivo, ya que el idioma es una preferencia de usuario
             String idiomaDispositivo =
-                          context.deviceLocale.toString().substring(0, 2);
-                      print(idiomaDispositivo);
-                      if(idiomaDispositivo=='es' || idiomaDispositivo=='en'){
-                        await context.setLocale(Locale(idiomaDispositivo));
-                      }else{
-                        //se coloca idioma ingles por defecto
-                        context.setLocale(context.locale);
-                      }
+                context.deviceLocale.toString().substring(0, 2);
+            print(idiomaDispositivo);
+            if (idiomaDispositivo == 'es' || idiomaDispositivo == 'en') {
+              await context.setLocale(Locale(idiomaDispositivo));
+            } else {
+              //se coloca idioma ingles por defecto
+              context.setLocale(context.locale);
+            }
 
-            
             authService.logout();
-            
-
 
             Navigator.pushNamedAndRemoveUntil(
                 context, 'login', (route) => false);

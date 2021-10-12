@@ -71,7 +71,7 @@ class _EstructuraPage extends StatelessWidget {
   }
 
   idioma(String texto, bool bandera, int numero, BuildContext context) {
-    final prefs = new PreferenciasUsuario();
+    //final prefs = new PreferenciasUsuario();
     final datosConfi = Provider.of<DatosConfiguraciones>(context);
     return Align(
       alignment: Alignment.centerLeft,

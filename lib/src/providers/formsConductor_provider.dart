@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 class FormsConductor extends ChangeNotifier {
   GlobalKey<FormState> formkeyConfPerfil = new GlobalKey<FormState>();
   GlobalKey<FormState> formkeyCambiarNumero = new GlobalKey<FormState>();
+  GlobalKey<FormState> formkeyViajeNuevo= new GlobalKey<FormState>();
   
 
   bool isValidFormConfPerfil() {
@@ -11,6 +12,10 @@ class FormsConductor extends ChangeNotifier {
 
   bool isValidFormCambiarNumero() {
     return formkeyCambiarNumero.currentState?.validate() ?? false;
+  }
+
+  bool isValidFormkeyViajeNuevo() {
+    return formkeyViajeNuevo.currentState?.validate() ?? false;
   }
 
 }

@@ -1,12 +1,15 @@
-import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+
+
+import 'package:flutter_viaje_express_conductor/src/providers/slidingUpPanel_provider.dart';
 import 'package:flutter_viaje_express_conductor/src/shared_prefs/preferencias_usuario.dart';
-import 'package:flutter_viaje_express_conductor/src/widgets/global_widgets/cabecera_widgets/cabecera_widget.dart';
 import 'package:flutter_viaje_express_conductor/src/widgets/global_widgets/sideBar_widgets/sideBar_widget.dart';
-import 'package:flutter_viaje_express_conductor/src/widgets/inicio_widgets/contenedorMapa_widget.dart';
-import 'package:flutter_viaje_express_conductor/src/widgets/inicio_widgets/custom_buttom_inicio.dart';
+import 'package:flutter_viaje_express_conductor/src/widgets/inicio_widgets/btn_seguir_ubicacion.dart';
+import 'package:flutter_viaje_express_conductor/src/widgets/inicio_widgets/btn_ubicacion.dart';
+import 'package:flutter_viaje_express_conductor/src/widgets/inicio_widgets/customButtomDrawer.dart';
+import 'package:flutter_viaje_express_conductor/src/widgets/inicio_widgets/customSlidingPanel.dart';
 
-
+import 'package:provider/provider.dart';
 
 class InicioPage extends StatefulWidget {
   @override
@@ -15,57 +18,93 @@ class InicioPage extends StatefulWidget {
 
 class _InicioPageState extends State<InicioPage> {
   GlobalKey<ScaffoldState> _scafoldKey = GlobalKey<ScaffoldState>();
+  static const double fabHeightClosed = 90.0;
+  //double fabHeight = fabHeightClosed;
+
   final prefs = new PreferenciasUsuario();
 
   @override
-  Widget build(BuildContext context) {
-    //inicializarIdioma();
-    prefs.ultimaPagina = 'inicio';
-    return Scaffold(
-        key: _scafoldKey,
-        drawer: SideBar(),
-        body: SafeArea(
-            child: SingleChildScrollView(
-                child: Stack(
-          children: [
-            _EstructuraPage(),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                _buttonDrawer(),
-              ],
-            ),
-          ],
-        ))));
+  void initState() {
+    //BlocProvider.of<MiUbicacionBloc>(context).iniciarSeguimiento();
+    super.initState();
   }
 
-  
-  Widget _buttonDrawer() {
-    return Container(
-      alignment: Alignment.centerLeft,
-      child: IconButton(
-        onPressed: () => _scafoldKey.currentState!.openDrawer(),
-        icon: Icon(
-          Icons.menu,
-          size: 35,
-          color: Colors.black,
+  @override
+  void dispose() {
+    //BlocProvider.of<MiUbicacionBloc>(context).cancelarSeguimiento();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    prefs.ultimaPagina = 'inicio';
+    //final panel = Provider.of<SlidingUpPanelProvider>(context);
+
+    return _estructuraPage();
+  }
+
+  Widget _estructuraPage() {
+    final panel = Provider.of<SlidingUpPanelProvider>(context);
+
+    return Scaffold(
+      key: _scafoldKey,
+      drawer: SideBar(),
+      body: SafeArea(
+        child: Stack(
+          children: [
+            Positioned(
+              top: 10,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  CustomButtonDrawer(scafoldKey: _scafoldKey),
+                ],
+              ),
+            ),
+            Positioned(
+                right: 20, bottom: panel.fabHeight, child: BtnUbicacion()),
+            Positioned(
+                right: 20,
+                bottom: panel.fabHeight + 70,
+                child: BtnSeguirUbicacion()),
+            CustomSlidingPanel(fabHeightClosed: fabHeightClosed),
+          ],
         ),
       ),
     );
   }
-}
 
-class _EstructuraPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: <Widget>[
-        Cabecera(titulo: 'inicio.titulo'.tr(), subtitulo: 'Viaje Express'),
-        BtnViajar(texto: 'inicio.button.pregunta'.tr()),
-        BtnRutasGuardadas(texto: 'inicio.button.seleccionar'.tr()),
-        SizedBox(height: 25),
-        ContenedorMapa()
-      ],
+  /* Widget crearMapa(MiUbicacionState state) {
+    final ubicacionDefecto = LatLng(-0.16050138340851247, -78.47380863777701);
+    if (!state.existeUbicacion) return Center(child: Text('Ubicando...'));
+    final mapaBloc = BlocProvider.of<MapaBloc>(context);
+
+    mapaBloc.add(OnNuevaUbicacion(state.ubicacion ?? ubicacionDefecto));
+    print('recarga mapa');
+
+    final cameraPosition = new CameraPosition(
+        target: mapaBloc.state.ubicacionRecogida ??
+            state
+                .ubicacion!, // se mostrara una ubicación por defecto si no se encuentra ninguna
+        zoom: 15);
+
+    return BlocBuilder<MapaBloc, MapaState>(
+      builder: (BuildContext context, state) {
+        return GoogleMap(
+          initialCameraPosition: cameraPosition,
+          myLocationEnabled: true,
+          myLocationButtonEnabled: false,
+          zoomControlsEnabled: false,
+          onMapCreated: mapaBloc
+              .initMapa, // el primer argumento de onMapCreated se asignara al mapaBloc.initMap
+          polylines: state.polylines.values.toSet(),
+          markers: state.markers.values.toSet(),
+          onCameraMove: (cameraPosition) {
+            // cameraPosition.target = LatLng central del mapa
+            mapaBloc.add(OnMovioMapa(cameraPosition.target));
+          },
+        );
+      },
     );
-  }
+  } */
 }
