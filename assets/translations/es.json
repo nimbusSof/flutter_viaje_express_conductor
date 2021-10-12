@@ -1,0 +1,250 @@
+{
+    "inputsGlobals":{
+        "correo"            : "Email",
+        "password"          :  "Password",
+        "password2"         :  "Confirmar password",
+        "cedula"            :  "Cédula",
+        "nombres"           :  "Nombres",
+        "apellidos"         :  "Apellidos",
+        "telefono"          :  "Teléfono móvil",
+        "fechaNacimiento"   :  "Fecha de nacimiento",
+        "ddGenero":{
+            "masculino"     : "Masculino",
+            "femenino"      : "Femenino",
+            "otro"          : "Otro"
+        }
+    },
+
+    "buttonsGlobals":{
+        "ingresar"      : "Ingresar",
+        "siguiente"     : "Siguiente",
+        "regresar"      : "Regresar",
+        "finalizarReg"  : "Finalizar Registro",
+        "guardar"       : "Guardar"
+    },
+    
+  
+    "alertsGlobals":{
+        "correo":{
+            "null"          :"Por favor ingresa tu correo electrónico",
+            "sintaxis"      : "Sintaxis de email incorrecta"
+        },
+        "password":{
+            "null"          : "Por favor ingresa tu clave de acceso",
+            "sintaxis"      : "El password debe tener como mínimo 6 caracteres",
+            "concidencia"   : "Las claves no coinciden"
+        },
+        "cedula":{
+            "null"          :"Por favor ingresa tu cédula",
+            "sintaxis"      : "Cédula inválida"
+        },
+        "nombres":{
+            "null"          :"Por favor ingresa tus nombres",
+            "sintaxis"      : ""
+        },
+        "apellidos":{
+            "null"          :"Por favor ingresa tus apellidos",
+            "sintaxis"      : ""
+        },
+        "telefono":{
+            "null"          :"Por favor ingresa tu número de teléfono",
+            "sintaxis"      : "Número de teléfono inválido"
+        },
+        "fechaNac":{
+            "null"          :"Por favor ingresa tu fecha de nacimiento",
+            "sintaxis"      : ""
+        }
+    },
+
+
+    "signIn"     :{
+        "frase"             :"Hacia tu destino",
+        "reiniciarClave"    : "¿Olvidaste tu clave?",
+        "cuentaPregunta"    : "¿No tienes cuenta?",
+        "crearCuenta"       : "Registrate",
+        "mensaje":{
+            "credenciales"      : "Credenciales erroneas"
+        }  
+
+    },
+
+    "signUp"     :{
+        "subtitulo"         :  "Registro",
+        "cuentaPregunta"    : "¿Ya tienes cuenta?",
+        "cuentaIngresar"    : "¡Ingresa ahora!",
+        "cancelar"          : "Cancelar",
+        "mensaje":{
+            "confirmacion"  : "¡Usuario registrado exitosamente!",
+            "error"         : "No se pudo registrar el usuario"
+        }  
+
+    },
+
+
+    "reiniciarClave":{
+        "titulo"        : "Recuperación de la cuenta",
+        "btnReiniciar"  : "Reiniciar clave",
+        "regresar"      : "Regresar"
+    },
+
+    "configuraciones":{
+        "inicio":{
+            "cabecera"  : "Configuraciones",
+            "telefono"  : "Cambiar número de teléfono",
+            "idioma"    : "Idioma",
+            "formato"   : "Formato de fecha y distancia",
+            "acerca"    : "Acerca de la aplicación",
+            "cerrar"    : "Cerrar sesión"
+
+        },
+
+        "telefono":{
+            "titulo"        :"Cambiar número",
+            "comentario"    :"Al cambiar su número, su cuenta y sus datos se transferiran a su nuevo número",
+            "placeHolder"   :"Ingresa tu número telefónico"     
+        },
+
+        "formatos":{
+            "titulo"        : "Formatos",
+            "fhoras"        : "Formato de 24 horas",
+            "fdistancia"    : "Unidades de distancia",
+            "unimedida"     : "Kilómetros"
+        },
+
+        "acercaApp":{
+            "titulo"        : "Acerca de la app",
+            "reglas"        : "Reglas del servicio",
+            "terminos"      : "Terminós y condiciones",
+            "politica"      : "Política de privacidad",
+            "version"       : "Versión de la aplicación"
+        },
+
+        "idiomas":{
+            "titulo": "Idioma"
+        }
+    },
+
+
+    "historialViajes":{
+        "inicio":{
+            "titulo"        : "Historial de viajes",
+            "vconcluidos"   : "Viajes concluidos",
+            "vcancelados"   : "Viajes cancelados"
+        }  
+    },
+
+
+    "metodoPago":{
+        "inicio":{
+            "titulo"    : "Método de Pago",
+            "tarjeta"   : "Tarjeta de crédito o débito",
+            "dinero"    : "Dinero en efectivo"
+        },
+
+        "efectivo":{
+            "titulo"    : "Efectivo",
+            "subtitulo" : "Paga tus viajes en efectivo",
+            "texto"     : "El teléfono de tu conductor te mostrará el monto a pagar al final del viaje."
+        },
+
+        "tarjeta":{
+            "titulo"    :"Agregar Tarjeta",
+            "numTarjeta":{
+                "placeholder": "Número de tarjeta",
+                "alerts":{
+                    "null":"Por favor ingresa el número de tu tarjeta"
+                }
+            },
+            "fechaVence":{
+                "placeholder": "Fecha de vencimiento",
+                "alerts":{
+                    "null":"Por favor ingresa la fecha de vencimiento"
+                }
+            },
+            "codigoSeg" :{
+                "placeholder": "Código de seguridad",
+                "alerts":{
+                    "null": "Por favor ingresa el código de seguridad de tu tarjeta"
+                }
+            }
+        }
+    },
+
+    "rutaGuardada":{
+        "inicio":{
+            "titulo"        :"Rutas Guardadas",
+            "vrGuardada"  :"Visualizar rutas guardadas"
+        }
+    },
+
+    "viajeNuevo":{
+        "input":{
+            "recogida":{
+                "placeholder":"Lugar de recogida"
+            },
+            "destino":{
+                "placeholder": "Lugar de destino"
+            }
+        },
+        "button":{
+            "seleccionar":"Seleccionar una destino guardado",
+            "solicitar":"Solicitar un auto"
+        },
+        "radioButton":{
+            "titulo":"Forma de pago",
+            "tarjeta":"Tarjeta",
+            "efectivo":"Efectivo"
+        },
+        "search":{
+            "txtBuscar" :"Buscar",
+            "destino"   :"Colocar lugar de destino manualmente",
+            "recogida"  :"Colocar lugar de recogida manualmente",
+            "resultados":"No hay resultados con"
+        }
+    },
+
+
+
+
+    "inicio":{
+        "titulo":"Listos para un nuevo destino",
+        "button":{
+            "pregunta":"¿A dónde deseas ir?",
+            "seleccionar": "Selecciona una ruta guardada"
+        },
+        "contenedor": "Taxis en tu zona"
+    },
+
+
+    "perfilUsuario":{
+        "inicio":{
+            "titulo":"Perfil de usuario",
+            "btnConfiguracion":"Configuración de perfil",
+            "btnCalificacion":"Mi calificación"
+        },
+
+        "configuracion":{
+            "confirmacion":"¡Datos actuactualizados correctamente!",
+            "error":"No se pudieron actualizar los datos"
+        },
+
+        "calificacion":{
+            "titulo":"Calificación de perfil",
+            "comentarios":"Comentarios"
+        }
+        
+    },
+
+    "sideBar":{
+        "inicio":"Inicio",
+        "viajeNuevo":"Viaje Nuevo",
+        "destinosFav":"Destinos favoritos",
+        "metodoPago":"Método de pago",
+        "historial":"Historial de viajes",
+        "configuraciones":"Configuraciones",
+        "salir":"Salir"
+    }
+
+
+
+}

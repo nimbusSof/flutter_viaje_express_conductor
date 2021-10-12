@@ -1,0 +1,242 @@
+{
+    "inputsGlobals":{
+        "correo"            : "Email",
+        "password"          :  "Password",
+        "password2"         :  "Confirm password",
+        "cedula"            :  "identification card",
+        "nombres"           :  "Names",
+        "apellidos"         :  "Surname",
+        "telefono"          :  "Mobile phone",
+        "fechaNacimiento"   :  "Date of birth",
+        "ddGenero":{
+            "masculino"     : "Masculine",
+            "femenino"      : "Feminine",
+            "otro"          : "Other"
+        }
+    },
+
+    "buttonsGlobals":{
+        "ingresar"  : "Sign In",
+        "siguiente"     : "Next",
+        "regresar"      : "Back",
+        "finalizarReg"  : "Finish Sign Up",
+        "guardar"       : "Save"
+    },
+    
+    "alertsGlobals":{
+        "correo":{
+            "null":"Please enter your email",
+            "sintaxis": "Incorrect email syntax"
+        }, 
+        "password":{
+            "null": "Please enter your password",
+            "sintaxis"      : "The password must be at least 6 characters long",
+            "concidencia"   : "Keys do not match"
+        },
+        "cedula":{
+            "null":"Please enter your identity card",
+            "sintaxis": "Invalid ID"
+        },
+        "nombres":{
+            "null":"Please enter your names",
+            "sintaxis": ""
+        },
+        "apellidos":{
+            "null":"Please enter your surname",
+            "sintaxis": ""
+        },
+        "telefono":{
+            "null":"Please enter your phone number",
+            "sintaxis": "Invalid phone number"
+        },
+        "fechaNac":{
+            "null":"Please enter your date of birth",
+            "sintaxis": ""
+        } 
+    },
+
+    
+
+    "signIn"     :{
+        "frase"             :"Towards your destination",
+        "reiniciarClave"    : "Did you forget your password?",
+        "cuentaPregunta"    : "do not have an account yet?",
+        "crearCuenta"       : "Sign Up",
+        "mensaje":{
+            "credenciales"      : "Wrong credentials"
+        }   
+    },
+
+    "signUp"     :{
+        "subtitulo"         :  "Sign Up",
+        "cuentaPregunta"    : "do you already have an account?",
+        "cuentaIngresar"    : "¡Sign in now!",
+        "cancelar"          : "Cancel"
+
+    },
+
+    "reiniciarClave":{
+        "titulo"        : "Account recovery",
+        "btnReiniciar"  : "Reset password",
+        "regresar"      : "Back"
+    },
+
+    "configuraciones":{
+        "inicio":{
+            "cabecera"  : "Settings",
+            "telefono"  : "Change phone number",
+            "idioma"    : "Language",
+            "formato"   : "Date and distance format",
+            "acerca"    : "About the application",
+            "cerrar"    : "Log out"
+
+        },
+
+        "telefono":{
+            "titulo":"Change number",
+            "comentario":"By changing your number, your account and data will be transferred to your new number",
+            "placeHolder":"Enter your phone number"       
+        },
+
+        "formatos": {
+            "titulo"    : "Formats",
+            "fhoras"    : "24 hour format",
+            "fdistancia": "Distance units",
+            "unimedida" : "Kilometers"
+        },
+
+        "acercaApp":{
+            "titulo"        : "About app",
+            "reglas"        : "Service rules",
+            "terminos"      : "Terms and conditions",
+            "politica"      : "Privacy policy",
+            "version"       : "Application version"
+        },
+
+        "idiomas":{
+            "titulo": "Language"
+        }
+    },
+
+
+    "historialViajes": {
+        "inicio":{
+            "titulo"        : "Travel history",
+            "vconcluidos"   : "Trips concluded",
+            "vcancelados"   : "Trips canceled"
+        }
+       
+    },
+
+
+    "metodoPago":{
+        "inicio":{
+            "titulo"    : "Payment Method",
+            "tarjeta"   : "Credit or debit card",
+            "dinero"    : "Cash money"
+        },
+        "efectivo":{
+            "titulo"    : "Cash money",
+            "subtitulo" : "Pay for your trips in cash",
+            "texto"     : "Your driver's phone will show you the amount to pay at the end of the trip."
+        },
+
+
+        "tarjeta": {
+            "titulo": "Add Card",
+            "numTarjeta": {
+                "placeholder": "Card number",
+                "alerts": {
+                    "null": "Please enter your card number"
+                }
+            },
+            "fechaVence": {
+                "placeholder": "Expiration date",
+                "alerts": {
+                    "null": "Please enter the expiration date"
+                }
+            },
+            "codigoSeg": {
+                "placeholder": "Security code",
+                "alerts": {
+                    "null": "Please enter the security code of your card"
+                }
+            }
+        } 
+
+    },
+
+    "rutaGuardada": {
+        "inicio":{
+            "titulo"      : "Saved Routes",
+            "vrGuardada": "View saved routes"
+        }
+    },
+
+
+    "viajeNuevo":{
+        "input":{
+            "recogida":{
+                "placeholder":"Pickup location"
+            },
+            "destino":{
+                "placeholder": "Destination place"
+            }
+        },
+        "button":{
+            "seleccionar":"Select a saved destination",
+            "solicitar":"Request a car"
+        },
+        "radioButton":{
+            "titulo":"Payment method",
+            "tarjeta":"Card",
+            "efectivo":"Cash"
+        },
+        "search":{
+            "txtBuscar" :"Search",
+            "destino"   :"Set destination manually",
+            "recogida"  :"Set pickup location manually",
+            "resultados":"There are no results with"
+        }
+    },
+
+    "inicio":{
+        "titulo":"Ready for a new destination",
+        "button":{
+            "pregunta":"Where do you want to go?",
+            "seleccionar": "Select a saved route"
+        },
+        "contenedor": "Taxis around you"
+    },
+
+
+    "perfilUsuario":{
+        "inicio":{
+            "titulo":"User profile",
+            "btnConfiguracion":"Profile settings",
+            "btnCalificacion":"My qualification"
+        },
+        "configuracion":{
+            "confirmacion":"Data updated correctly!",
+            "error":"Could not update data"
+        },
+        "calificacion":{
+            "titulo":"Profile rating",
+            "comentarios":"Comments"
+        }
+    },
+
+
+    "sideBar":{
+        "inicio":"Home",
+        "viajeNuevo":"New trip",
+        "destinosFav":"Favorite destinations",
+        "metodoPago":"Payment",
+        "historial":"Travel history",
+        "configuraciones":"Settings",
+        "salir":"Log out"
+    }
+
+    
+
+}
