@@ -13,20 +13,25 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
+# Visuales
   cupertino_icons: ^1.0.2
+  animate_do: ^2.0.0
   flutter_rating_bar: ^4.0.0
+  sliding_up_panel: ^2.0.0+1
+# Almacenamiento local
   flutter_secure_storage: ^4.2.1
   shared_preferences: ^2.0.7
+# Mapas  
+  easy_localization: ^3.0.0
+# Gestión de estados 
   provider: ^5.0.0
   flutter_bloc: ^7.1.0
   bloc: ^7.1.0
+# Consumo de servicios
   http: ^0.13.3
  
-  dio: ^4.0.0
-  animate_do: ^2.0.0
-  sliding_up_panel: ^2.0.0+1
-  easy_localization: ^3.0.0
+  
+  
 
 dev_dependencies:
   flutter_test:
